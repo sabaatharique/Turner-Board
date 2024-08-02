@@ -58,6 +58,7 @@ function windowResized() {
 
 function setup() {
   canvas = createCanvas(width, height);
+  canvas.style('display', 'block');
   canvas.parent('canvas-div');
 
   //load sounds
