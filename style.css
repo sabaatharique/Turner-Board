@@ -1,37 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+  --off-white: rgb(246, 244, 242);
+  --milkshake-pink: rgb(232, 166, 195);
+  --soft-red: rgb(211, 107, 124);
+  --crimson-red: rgb(210, 35, 70);
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(232, 166, 195);
+    background-color: var(--milkshake-pink);
+    align-items: center;
+    overflow: hidden;
   }
 
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0;
+  margin: 0;
   font-family: 'Press Start 2P';
-  font-size: 8vh;
-  text-align: center;
-  width: 100%;
 }
 
-a:link {
-  padding-top: 2rem;
+a:link { 
+  font-size: 3.5rem;
+  margin-top: 2.5rem;
   text-decoration: none; 
-  color: rgb(246, 244, 242);
+  color: var(--off-white);
 }
 
 a:visited {
-  color: rgb(246, 244, 242);
+  color: var(--off-white);
 }
 
 a:hover {
-  font-size: 8.25vh;
-  color: rgb(211, 107, 124);
+  font-size: 4rem;
+  color: var(--soft-red);
   transition: 0.3s;
 }
 
+.button {
+  margin: 2rem;
+  margin-bottom: 1.5rem;
+  width: 6rem;
+  height: 3rem;
+  background-color: var(--crimson-red);
+  border-radius: 3rem;
+  border: solid  var(--crimson-red);
+  font-family: 'Press Start 2P';
+  font-size: 1rem;
+  color: var(--off-white);
+}
+
+.button:hover {
+  font-size: 1.25rem;
+  width: 7rem;
+  height: 3.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.stats-div {
+  width: 45%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--off-white);
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
 #canvas-div {
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
